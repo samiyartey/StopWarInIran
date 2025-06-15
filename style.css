@@ -1,0 +1,22 @@
+#name{
+    color: #3F72AF;
+    text-align: center;
+    font-style: italic;
+    font-family: "Cairo", sans-serif;
+}
+#name:hover{
+    color:#D1D8BE;
+}
+#namediv{
+    background-color: #D1D8BE;
+}
+#buttonn{
+    width: 90;
+    height: 90;
+}
+#body{
+    background-color: black;
+}
+#fileinput{
+    align-content: center;
+}
