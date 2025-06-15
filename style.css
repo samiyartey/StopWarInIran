@@ -1,22 +1,74 @@
-#name{
-    color: #3F72AF;
+/* style.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body#pagebody {
+    font-family: 'Cairo', sans-serif;
+    background: #ffffff;
+    color: #333;
+    direction: rtl;
+    padding: 20px;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#headerofpage {
+    font-weight: 900;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #c62828; /* قرمز تیره */
     text-align: center;
-    font-style: italic;
-    font-family: "Cairo", sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
 }
-#name:hover{
-    color:#D1D8BE;
+
+.container {
+    display: flex;
+    gap: 40px;
+    max-width: 1000px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-#namediv{
-    background-color: #D1D8BE;
+
+#persian, #english {
+    background: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    padding: 25px 30px;
+    flex: 1 1 400px;
+    max-width: 480px;
 }
-#buttonn{
-    width: 90;
-    height: 90;
+
+#paraghraph {
+    font-weight: 400;
+    font-size: 1.1rem;
+    white-space: pre-wrap;
+    line-height: 1.7;
+    color: #444;
+    user-select: text;
 }
-#body{
-    background-color: black;
-}
-#fileinput{
-    align-content: center;
+
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        gap: 25px;
+    }
+    #headerofpage {
+        font-size: 2.4rem;
+        margin-bottom: 20px;
+    }
+    #persian, #english {
+        max-width: 100%;
+        padding: 20px;
+    }
 }
